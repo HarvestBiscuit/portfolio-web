@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* 開発者ライクな深いダークネイビー（洗練された黒） */
+  --background: #0a0f1c;
+  --foreground: #e2e8f0;
 }
 
 @theme inline {
@@ -14,8 +15,9 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* より深い黒に近いネイビー */
+    --background: #030712;
+    --foreground: #f8fafc;
   }
 }
 
@@ -23,4 +25,6 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
